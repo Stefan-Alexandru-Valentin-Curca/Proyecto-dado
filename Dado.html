@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="DADO.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+    <body style="background-color:#504f4f;">
+   
+        <h1>Dado aleatorio</h1>  
+            <p style="color:#ffffff";>Pulsa el boton</p> 
+   <form action="/dado" method="POST">
+    <div class="form-group">
+      <label for="firstName"> <p style="color:#ffffff";>Nombre</p></label>
+      <input type="text" class="form-control col-lg-9" id="f_name" aria-describedby="emailHelp" placeholder="Enter first name" name="f_name">
+      <input type="submit">lanzar</submit>
+    </div>
+</form>
+
+   <button onclick="myFunction()">Lanza el dado</button>  
+   <p id="salida"></p>  
+   <script>  
+    var texto='';  
+    var resultado='';  
+    function myFunction() {  
+     var aleatorio=Math.floor(Math.random()*10)+1  
+     texto+=aleatorio+" ";  
+     resultado='<h3>'+aleatorio+'</h3>'+'<br><br>'+texto;  
+     document.getElementById("salida").innerHTML = resultado;  
+   }  
+  </script>  
+  </body>  
+    
+</body>
+</html>
