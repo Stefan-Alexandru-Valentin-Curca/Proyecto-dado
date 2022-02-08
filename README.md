@@ -1,3 +1,3 @@
 # Proyecto-dado
 
-Desarrollo de aplicacion de dado (java,mysql)
+Desarrollo de aplicacion de dado (node.js)
